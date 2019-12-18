@@ -1,0 +1,2567 @@
+
+<!-- saved from url=(0076)https://knureigs.github.io/itech/lb/ITech1_Lab3/ITech1_Lab3_2_5_meteo_kh.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>CliWare. ������ �� ����������� ������� � �������.</title>
+
+	<style>.result{margin: 0 auto;width: 80%;text-align: center;padding-top: 50px;}</style>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/main.js"></script>	
+</head>
+<body bgcolor="C7EBFD" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+	<div class="result">
+		<div class="hot"></div>
+		<div class="cold"></div>
+		<a href="javascript: calculateDays(3, 5);" id="calculate">Высчитать самый жаркий и холодный день!</a>
+	</div>
+
+
+
+	<center>
+		<font class="bold">������ ��������� ���������� �� �����������<br>������� � �������</font>
+		<br>
+		<font class="text"><b>
+			<table border="1" width="80%" xmlns="http://www.w3.org/TR/xhtml1/strict">
+				<tbody><tr>
+					<th>STATION_ID</th><th>STATION_NM</th><th>DATE_OBS</th><th>TMPMAX</th><th>Q</th><th>TMPMIN</th><th>Q</th><th>TMPMN</th><th>Q</th><th>PRECIP</th><th>Q</th><th>D</th>
+				</tr>
+				
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-01</td><td>1</td><td>0</td><td> </td><td>0</td><td>-.4</td><td>0</td><td>.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-02</td><td>.4</td><td>0</td><td> </td><td>0</td><td>-3</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-03</td><td>-.2</td><td>0</td><td> </td><td>0</td><td>-3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-04</td><td>-.2</td><td>0</td><td> </td><td>0</td><td>-1.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-05</td><td>.5</td><td>0</td><td> </td><td>0</td><td>-.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-06</td><td>2</td><td>0</td><td> </td><td>0</td><td>-1.5</td><td>0</td><td>.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-07</td><td>1</td><td>0</td><td> </td><td>0</td><td>-2.3</td><td>0</td><td>.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-08</td><td>-.6</td><td>0</td><td> </td><td>0</td><td>-1.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-09</td><td>-1</td><td>0</td><td> </td><td>0</td><td>-1.8</td><td>0</td><td>1.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-10</td><td>1.2</td><td>0</td><td> </td><td>0</td><td>.2</td><td>0</td><td>5.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-11</td><td>2.2</td><td>0</td><td> </td><td>0</td><td>.3</td><td>0</td><td>1.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-12</td><td>1.8</td><td>0</td><td> </td><td>0</td><td>.9</td><td>0</td><td>1.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-13</td><td>1.3</td><td>0</td><td> </td><td>0</td><td>.3</td><td>0</td><td>.8</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-14</td><td>-.3</td><td>0</td><td> </td><td>0</td><td>-1.3</td><td>0</td><td>.6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-15</td><td>-.2</td><td>0</td><td> </td><td>0</td><td>-3.1</td><td>0</td><td>.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-16</td><td>-.2</td><td>0</td><td> </td><td>0</td><td>-4</td><td>0</td><td>1.6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-17</td><td>-3.4</td><td>0</td><td> </td><td>0</td><td>-6.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-18</td><td>-6.5</td><td>0</td><td> </td><td>0</td><td>-8.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-19</td><td>-.3</td><td>0</td><td> </td><td>0</td><td>-2.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-20</td><td>-.5</td><td>0</td><td> </td><td>0</td><td>-1.5</td><td>0</td><td>1.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-21</td><td>1.5</td><td>0</td><td> </td><td>0</td><td>.4</td><td>0</td><td>.7</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-22</td><td>4.3</td><td>0</td><td> </td><td>0</td><td>.9</td><td>0</td><td>4.8</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-23</td><td>5.5</td><td>0</td><td> </td><td>0</td><td>2.5</td><td>0</td><td>.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-24</td><td>5.6</td><td>0</td><td> </td><td>0</td><td>3</td><td>0</td><td>2.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-25</td><td>1.8</td><td>0</td><td> </td><td>0</td><td>.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-26</td><td>4.7</td><td>0</td><td> </td><td>0</td><td>-.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-27</td><td>4.3</td><td>0</td><td> </td><td>0</td><td>-1.9</td><td>0</td><td>2.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-28</td><td>2.2</td><td>0</td><td> </td><td>0</td><td>1</td><td>0</td><td>2.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-29</td><td>2.5</td><td>0</td><td> </td><td>0</td><td>1.3</td><td>0</td><td>.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-30</td><td>1.2</td><td>0</td><td> </td><td>0</td><td>-6</td><td>0</td><td>1.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-01-31</td><td>-11</td><td>0</td><td> </td><td>0</td><td>-14.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-02-01</td><td>-10.5</td><td>0</td><td>-17.4</td><td>0</td><td>-14.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-02-02</td><td>-4.1</td><td>0</td><td>-10.5</td><td>0</td><td>-7</td><td>0</td><td>.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-02-03</td><td>2.2</td><td>0</td><td>-4.2</td><td>0</td><td>-.1</td><td>0</td><td>.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-02-04</td><td>4</td><td>0</td><td>.8</td><td>0</td><td>2.1</td><td>0</td><td>2.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-02-05</td><td>.8</td><td>0</td><td>-.6</td><td>0</td><td>-.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-02-06</td><td>.8</td><td>0</td><td>-.4</td><td>0</td><td>-.2</td><td>0</td><td>2.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-02-07</td><td>.4</td><td>0</td><td>-1.7</td><td>0</td><td>-1.2</td><td>0</td><td>3.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-02-08</td><td>-.8</td><td>0</td><td>-5.2</td><td>0</td><td>-3.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-02-09</td><td>-.5</td><td>0</td><td>-5.9</td><td>0</td><td>-3.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-02-10</td><td>-.7</td><td>0</td><td>-12.5</td><td>0</td><td>-5.4</td><td>0</td><td>1.6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-02-11</td><td>-12.5</td><td>0</td><td>-19.9</td><td>0</td><td>-17.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-02-12</td><td>-14.3</td><td>0</td><td>-17.9</td><td>0</td><td>-16.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-02-13</td><td>-8.6</td><td>0</td><td>-15.7</td><td>0</td><td>-13.3</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-02-14</td><td>-5.8</td><td>0</td><td>-12.4</td><td>0</td><td>-7.9</td><td>0</td><td>.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-02-15</td><td>-7.8</td><td>0</td><td>-15.5</td><td>0</td><td>-12.6</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-02-16</td><td>-11.6</td><td>0</td><td>-15.3</td><td>0</td><td>-14</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-02-17</td><td>-10.5</td><td>0</td><td>-19.5</td><td>0</td><td>-15.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-02-18</td><td>-7.4</td><td>0</td><td>-18.3</td><td>0</td><td>-13.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-02-19</td><td>-8.8</td><td>0</td><td>-14.8</td><td>0</td><td>-12.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-02-20</td><td>-9.1</td><td>0</td><td>-15.5</td><td>0</td><td>-13</td><td>0</td><td>.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-02-21</td><td>-7.9</td><td>0</td><td>-17.1</td><td>0</td><td>-13.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-02-22</td><td>-6</td><td>0</td><td>-10.4</td><td>0</td><td>-7.8</td><td>0</td><td>.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-02-23</td><td>-6</td><td>0</td><td>-9</td><td>0</td><td>-8.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-02-24</td><td>-7</td><td>0</td><td>-9.7</td><td>0</td><td>-8.9</td><td>0</td><td>0</td><td>0</td><td>3</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-02-25</td><td>-4.3</td><td>0</td><td>-13.4</td><td>0</td><td>-9.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-02-26</td><td>-5.5</td><td>0</td><td>-12.3</td><td>0</td><td>-8.7</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-02-27</td><td>-3.6</td><td>0</td><td>-9</td><td>0</td><td>-5.7</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-02-28</td><td>.5</td><td>0</td><td>-3.7</td><td>0</td><td>-1.1</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-02-29</td><td>2.2</td><td>0</td><td>-.7</td><td>0</td><td>.3</td><td>0</td><td>.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-01</td><td>3.2</td><td>0</td><td>.1</td><td>0</td><td>1.4</td><td>0</td><td>1.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-02</td><td>1.4</td><td>0</td><td>-.2</td><td>0</td><td>.1</td><td>0</td><td>.6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-03</td><td>2</td><td>0</td><td>.1</td><td>0</td><td>.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-04</td><td>5.2</td><td>0</td><td>.6</td><td>0</td><td>2.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-05</td><td>4.4</td><td>0</td><td>-.6</td><td>0</td><td>1.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-06</td><td>5.1</td><td>0</td><td>-.6</td><td>0</td><td>.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-07</td><td>2</td><td>0</td><td>-2</td><td>0</td><td>-.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-08</td><td>1.9</td><td>0</td><td>-4.7</td><td>0</td><td>-1.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-09</td><td>2.6</td><td>0</td><td>-3.8</td><td>0</td><td>-1.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-10</td><td>3.4</td><td>0</td><td>-2.8</td><td>0</td><td>-.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-11</td><td>2</td><td>0</td><td>-1</td><td>0</td><td>.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-12</td><td>4.2</td><td>0</td><td>.2</td><td>0</td><td>1.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-13</td><td>8.8</td><td>0</td><td>.5</td><td>0</td><td>3.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-14</td><td>7.4</td><td>0</td><td>.4</td><td>0</td><td>2.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-15</td><td>6.1</td><td>0</td><td>1.1</td><td>0</td><td>2.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-16</td><td>2.7</td><td>0</td><td>-.3</td><td>0</td><td>0</td><td>0</td><td>6.6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-17</td><td>5</td><td>0</td><td>-.4</td><td>0</td><td>1.1</td><td>0</td><td>.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-18</td><td>5.2</td><td>0</td><td>0</td><td>0</td><td>1.8</td><td>0</td><td>.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-19</td><td>5.6</td><td>0</td><td>-1.2</td><td>0</td><td>1.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-20</td><td>6.2</td><td>0</td><td>.6</td><td>0</td><td>2.9</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-21</td><td>3.6</td><td>0</td><td>-3.2</td><td>0</td><td>-.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-22</td><td>7.2</td><td>0</td><td>-1.4</td><td>0</td><td>1.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-23</td><td>10.7</td><td>0</td><td>.7</td><td>0</td><td>4.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-24</td><td>12.7</td><td>0</td><td>2.3</td><td>0</td><td>5.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-25</td><td>5.8</td><td>0</td><td>-3.5</td><td>0</td><td>-2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-26</td><td>1.7</td><td>0</td><td>-6</td><td>0</td><td>-3.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-27</td><td>1.2</td><td>0</td><td>-2.9</td><td>0</td><td>-1.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-28</td><td>1</td><td>0</td><td>-2.4</td><td>0</td><td>-1.4</td><td>0</td><td>.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-29</td><td>-.2</td><td>0</td><td>-5.5</td><td>0</td><td>-3.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-30</td><td>2.6</td><td>0</td><td>-5.2</td><td>0</td><td>-1.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-03-31</td><td>5</td><td>0</td><td>-4.5</td><td>0</td><td>-1.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-04-01</td><td>7</td><td>0</td><td>-2.7</td><td>0</td><td>.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-04-02</td><td>10.6</td><td>0</td><td>-2.2</td><td>0</td><td>2.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-04-03</td><td>11.7</td><td>0</td><td>.4</td><td>0</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-04-04</td><td>8.5</td><td>0</td><td>5.5</td><td>0</td><td>6</td><td>0</td><td>4.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-04-05</td><td>5.7</td><td>0</td><td>-.6</td><td>0</td><td>1.9</td><td>0</td><td>.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-04-06</td><td>2.8</td><td>0</td><td>-1.6</td><td>0</td><td>-.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-04-07</td><td>6.7</td><td>0</td><td>-3.2</td><td>0</td><td>.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-04-08</td><td>5.6</td><td>0</td><td>-.8</td><td>0</td><td>1.7</td><td>0</td><td>3.6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-04-09</td><td>3</td><td>0</td><td>-2.6</td><td>0</td><td>-.8</td><td>0</td><td>4.7</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-04-10</td><td>7.9</td><td>0</td><td>1.2</td><td>0</td><td>3.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-04-11</td><td>8.4</td><td>0</td><td>-1.1</td><td>0</td><td>3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-04-12</td><td>11</td><td>0</td><td>2.6</td><td>0</td><td>5.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-04-13</td><td>6.4</td><td>0</td><td>1</td><td>0</td><td>3.1</td><td>0</td><td>5.8</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-04-14</td><td>7.8</td><td>0</td><td>1</td><td>0</td><td>4</td><td>0</td><td>12.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-04-15</td><td>11.3</td><td>0</td><td>2.8</td><td>0</td><td>5.8</td><td>0</td><td>.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-04-16</td><td>16</td><td>0</td><td>2.4</td><td>0</td><td>7.2</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-04-17</td><td>10.4</td><td>0</td><td>3.4</td><td>0</td><td>5.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-04-18</td><td>17.2</td><td>0</td><td>2.7</td><td>0</td><td>9.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-04-19</td><td>15.5</td><td>0</td><td>7.4</td><td>0</td><td>10.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-04-20</td><td>12</td><td>0</td><td>6.8</td><td>0</td><td>8.4</td><td>0</td><td>7.6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-04-21</td><td>11.5</td><td>0</td><td>4.3</td><td>0</td><td>7</td><td>0</td><td>2.8</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-04-22</td><td>16.3</td><td>0</td><td>4.8</td><td>0</td><td>9.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-04-23</td><td>12</td><td>0</td><td>6.4</td><td>0</td><td>8.6</td><td>0</td><td>3.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-04-24</td><td>14.8</td><td>0</td><td>7.8</td><td>0</td><td>10.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-04-25</td><td>16.8</td><td>0</td><td>8.2</td><td>0</td><td>11.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-04-26</td><td>19.8</td><td>0</td><td>10.1</td><td>0</td><td>13.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-04-27</td><td>18.8</td><td>0</td><td>11.4</td><td>0</td><td>14.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-04-28</td><td>22.7</td><td>0</td><td>13.2</td><td>0</td><td>16.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-04-29</td><td>24.5</td><td>0</td><td>15</td><td>0</td><td>17.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-04-30</td><td>21.9</td><td>0</td><td>13.5</td><td>0</td><td>17</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-01</td><td>21.3</td><td>0</td><td>12</td><td>0</td><td>15.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-02</td><td>19.5</td><td>0</td><td>9.5</td><td>0</td><td>13.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-03</td><td>22.8</td><td>0</td><td>9.1</td><td>0</td><td>14.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-04</td><td>24.2</td><td>0</td><td>10.4</td><td>0</td><td>16.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-05</td><td>25.9</td><td>0</td><td>10.2</td><td>0</td><td>16.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-06</td><td>17.7</td><td>0</td><td>9.4</td><td>0</td><td>11.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-07</td><td>17.5</td><td>0</td><td>6.5</td><td>0</td><td>11.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-08</td><td>16.4</td><td>0</td><td>4.2</td><td>0</td><td>10.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-09</td><td>19.2</td><td>0</td><td>6.4</td><td>0</td><td>12.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-10</td><td>22.3</td><td>0</td><td>8.6</td><td>0</td><td>14.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-11</td><td>23.6</td><td>0</td><td>9</td><td>0</td><td>15.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-12</td><td>24.1</td><td>0</td><td>11.3</td><td>0</td><td>17.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-13</td><td>24.2</td><td>0</td><td>11</td><td>0</td><td>17.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-14</td><td>26</td><td>0</td><td>12.8</td><td>0</td><td>19.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-15</td><td>26.5</td><td>0</td><td>15</td><td>0</td><td>18.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-16</td><td>18.8</td><td>0</td><td>4.6</td><td>0</td><td>6.6</td><td>0</td><td>8.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-17</td><td>14.5</td><td>0</td><td>3</td><td>0</td><td>7.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-18</td><td>18.4</td><td>0</td><td>3.8</td><td>0</td><td>10.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-19</td><td>18.6</td><td>0</td><td>7.2</td><td>0</td><td>12.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-20</td><td>20.9</td><td>0</td><td>11.4</td><td>0</td><td>14.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-21</td><td>21.8</td><td>0</td><td>8.8</td><td>0</td><td>15</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-22</td><td>22.1</td><td>0</td><td>9.4</td><td>0</td><td>15.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-23</td><td>24.7</td><td>0</td><td>12.8</td><td>0</td><td>18</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-24</td><td>26.5</td><td>0</td><td>12.6</td><td>0</td><td>19.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-25</td><td>27.9</td><td>0</td><td>14.3</td><td>0</td><td>20.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-26</td><td>28.1</td><td>0</td><td>16.7</td><td>0</td><td>21.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-27</td><td>26.3</td><td>0</td><td>14.2</td><td>0</td><td>19.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-28</td><td>26.9</td><td>0</td><td>12.2</td><td>0</td><td>19.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-29</td><td>26.8</td><td>0</td><td>16.8</td><td>0</td><td>19.8</td><td>0</td><td>.6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-30</td><td>25.6</td><td>0</td><td>15.7</td><td>0</td><td>18.7</td><td>0</td><td>.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-05-31</td><td>26.8</td><td>0</td><td>16.2</td><td>0</td><td>19.5</td><td>0</td><td>9.8</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-06-01</td><td>29.8</td><td>0</td><td>14.4</td><td>0</td><td>21</td><td>0</td><td>4.7</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-06-02</td><td>30.4</td><td>0</td><td>16.4</td><td>0</td><td>22.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-06-03</td><td>25.6</td><td>0</td><td>15.1</td><td>0</td><td>19.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-06-04</td><td>18</td><td>0</td><td>12.5</td><td>0</td><td>15.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-06-05</td><td>23.3</td><td>0</td><td>12.8</td><td>0</td><td>17.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-06-06</td><td>26.5</td><td>0</td><td>13.1</td><td>0</td><td>19.3</td><td>0</td><td>2.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-06-07</td><td>19.8</td><td>0</td><td>13.9</td><td>0</td><td>16.6</td><td>0</td><td>28</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�����??�               </td><td>1936-06-08</td><td>21.7</td><td>0</td><td>11.3</td><td>0</td><td>16.6</td><td>0</td><td>1.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-06-09</td><td>21.4</td><td>0</td><td>13.5</td><td>0</td><td>17.7</td><td>0</td><td>9.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-06-10</td><td>23.4</td><td>0</td><td>15.4</td><td>0</td><td>18.9</td><td>0</td><td>6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-06-11</td><td>23.5</td><td>0</td><td>15.2</td><td>0</td><td>18.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-06-12</td><td>26.9</td><td>0</td><td>14.1</td><td>0</td><td>21.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-06-13</td><td>28.8</td><td>0</td><td>14.7</td><td>0</td><td>21.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-06-14</td><td>27.4</td><td>0</td><td>13.9</td><td>0</td><td>20.5</td><td>0</td><td>5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-06-15</td><td>28.1</td><td>0</td><td>14.6</td><td>0</td><td>21.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-06-16</td><td>27.7</td><td>0</td><td>14.4</td><td>0</td><td>21.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-06-17</td><td>24.3</td><td>0</td><td>16.1</td><td>0</td><td>20.4</td><td>0</td><td>.6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-06-18</td><td>27.3</td><td>0</td><td>16.2</td><td>0</td><td>20.6</td><td>0</td><td>25</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-06-19</td><td>21.5</td><td>0</td><td>15.4</td><td>0</td><td>17.8</td><td>0</td><td>14.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-06-20</td><td>24.4</td><td>0</td><td>14.9</td><td>0</td><td>19.9</td><td>0</td><td>2.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-06-21</td><td>26.4</td><td>0</td><td>15.5</td><td>0</td><td>20.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-06-22</td><td>28.7</td><td>0</td><td>16.4</td><td>0</td><td>23.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-06-23</td><td>27.1</td><td>0</td><td>17.5</td><td>0</td><td>20.2</td><td>0</td><td>.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-06-24</td><td>26.8</td><td>0</td><td>14.6</td><td>0</td><td>20.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-06-25</td><td>27.8</td><td>0</td><td>14.3</td><td>0</td><td>21.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-06-26</td><td>29.5</td><td>0</td><td>16.5</td><td>0</td><td>22.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-06-27</td><td>28.8</td><td>0</td><td>17.3</td><td>0</td><td>23.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-06-28</td><td>28.7</td><td>0</td><td>15.4</td><td>0</td><td>22</td><td>0</td><td>1.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-06-29</td><td>26.1</td><td>0</td><td>13.2</td><td>0</td><td>20.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-06-30</td><td>23.8</td><td>0</td><td>11</td><td>0</td><td>18.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-07-01</td><td>26.9</td><td>0</td><td>9.7</td><td>0</td><td>20.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-07-02</td><td>30</td><td>0</td><td>11.6</td><td>0</td><td>22.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-07-03</td><td>31.8</td><td>0</td><td>14.4</td><td>0</td><td>25.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-07-04</td><td>32.7</td><td>0</td><td>16.1</td><td>0</td><td>25.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-07-05</td><td>34.5</td><td>0</td><td>14.3</td><td>0</td><td>25.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-07-06</td><td>34.4</td><td>0</td><td>21.4</td><td>0</td><td>27.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-07-07</td><td>30.4</td><td>0</td><td>21.5</td><td>0</td><td>23.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-07-08</td><td>28.7</td><td>0</td><td>16.2</td><td>0</td><td>21.2</td><td>0</td><td>.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-07-09</td><td>28.5</td><td>0</td><td>15.1</td><td>0</td><td>22.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-07-10</td><td>28.6</td><td>0</td><td>16.5</td><td>0</td><td>22.6</td><td>0</td><td>.6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-07-11</td><td>30.2</td><td>0</td><td>17.5</td><td>0</td><td>24.1</td><td>0</td><td>7</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-07-12</td><td>32.8</td><td>0</td><td>18.9</td><td>0</td><td>26.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-07-13</td><td>33.4</td><td>0</td><td>20.5</td><td>0</td><td>27.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-07-14</td><td>30.3</td><td>0</td><td>20.4</td><td>0</td><td>24.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-07-15</td><td>31.1</td><td>0</td><td>17.4</td><td>0</td><td>22.8</td><td>0</td><td>14.6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-07-16</td><td>29</td><td>0</td><td>17.3</td><td>0</td><td>22.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-07-17</td><td>31.3</td><td>0</td><td>18.5</td><td>0</td><td>24.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-07-18</td><td>27.4</td><td>0</td><td>17.2</td><td>0</td><td>21.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-07-19</td><td>28.2</td><td>0</td><td>14</td><td>0</td><td>21.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-07-20</td><td>29.6</td><td>0</td><td>14.2</td><td>0</td><td>22.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-07-21</td><td>32.1</td><td>0</td><td>16</td><td>0</td><td>25.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-07-22</td><td>33.3</td><td>0</td><td>17.4</td><td>0</td><td>26</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>��??����               </td><td>1936-07-23</td><td>30.8</td><td>0</td><td>16.3</td><td>0</td><td>25</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-07-24</td><td>32.5</td><td>0</td><td>20.1</td><td>0</td><td>25.3</td><td>0</td><td>13.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-07-25</td><td>33.1</td><td>0</td><td>18.6</td><td>0</td><td>26.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-07-26</td><td>33.6</td><td>0</td><td>19.3</td><td>0</td><td>27.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-07-27</td><td>35.4</td><td>0</td><td>20.4</td><td>0</td><td>28.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-07-28</td><td>37.1</td><td>0</td><td>21.1</td><td>0</td><td>27.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-07-29</td><td>36.1</td><td>0</td><td>20.1</td><td>0</td><td>29</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-07-30</td><td>35.6</td><td>0</td><td>22.1</td><td>0</td><td>28.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-07-31</td><td>36.1</td><td>0</td><td>20.4</td><td>0</td><td>28.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-08-01</td><td>35.9</td><td>0</td><td>22.4</td><td>0</td><td>28.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-08-02</td><td>36.5</td><td>0</td><td>24.3</td><td>0</td><td>29.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-08-03</td><td>35.8</td><td>0</td><td>25.6</td><td>0</td><td>28.8</td><td>0</td><td>2.8</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-08-04</td><td>32.4</td><td>0</td><td>24.1</td><td>0</td><td>27.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-08-05</td><td>35.1</td><td>0</td><td>21.5</td><td>0</td><td>27.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-08-06</td><td>37.4</td><td>0</td><td>24.3</td><td>0</td><td>29.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>���??���               </td><td>1936-08-07</td><td>34</td><td>0</td><td>16.2</td><td>0</td><td>20.8</td><td>0</td><td>7.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-08-08</td><td>23.8</td><td>0</td><td>14.3</td><td>0</td><td>18.1</td><td>0</td><td>22.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-08-09</td><td>25.2</td><td>0</td><td>13.1</td><td>0</td><td>18.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-08-10</td><td>28.5</td><td>0</td><td>18.3</td><td>0</td><td>22.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-08-11</td><td>25</td><td>0</td><td>18.6</td><td>0</td><td>21.1</td><td>0</td><td>7.7</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-08-12</td><td>26.8</td><td>0</td><td>18.6</td><td>0</td><td>21</td><td>0</td><td>.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-08-13</td><td>24.7</td><td>0</td><td>18.1</td><td>0</td><td>20.6</td><td>0</td><td>.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-08-14</td><td>29.7</td><td>0</td><td>19.1</td><td>0</td><td>22.1</td><td>0</td><td>4.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-08-15</td><td>24.7</td><td>0</td><td>15.2</td><td>0</td><td>19.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-08-16</td><td>26.1</td><td>0</td><td>16.6</td><td>0</td><td>20.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-08-17</td><td>26.9</td><td>0</td><td>16</td><td>0</td><td>19.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-08-18</td><td>26.6</td><td>0</td><td>16.3</td><td>0</td><td>20.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-08-19</td><td>23.5</td><td>0</td><td>13.6</td><td>0</td><td>18</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-08-20</td><td>25.4</td><td>0</td><td>11.8</td><td>0</td><td>16.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-08-21</td><td>24.6</td><td>0</td><td>12</td><td>0</td><td>17.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-08-22</td><td>26</td><td>0</td><td>13.7</td><td>0</td><td>19</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-08-23</td><td>27.5</td><td>0</td><td>15.9</td><td>0</td><td>20.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-08-24</td><td>29.6</td><td>0</td><td>15.9</td><td>0</td><td>21.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-08-25</td><td>25.3</td><td>0</td><td>15.4</td><td>0</td><td>17.7</td><td>0</td><td>3.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-08-26</td><td>19.8</td><td>0</td><td>12.9</td><td>0</td><td>14.4</td><td>0</td><td>6.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-08-27</td><td>18</td><td>0</td><td>13</td><td>0</td><td>14.2</td><td>0</td><td>.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-08-28</td><td>19.1</td><td>0</td><td>12.6</td><td>0</td><td>14.7</td><td>0</td><td>4.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-08-29</td><td>22.1</td><td>0</td><td>12.9</td><td>0</td><td>15.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-08-30</td><td>22.7</td><td>0</td><td>11.4</td><td>0</td><td>15.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-08-31</td><td>25</td><td>0</td><td>13.6</td><td>0</td><td>17.5</td><td>0</td><td>3.7</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-09-01</td><td>19.8</td><td>0</td><td>15.4</td><td>0</td><td>16.5</td><td>0</td><td>.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-09-02</td><td>15.7</td><td>0</td><td>9.8</td><td>0</td><td>12.2</td><td>0</td><td>2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-09-03</td><td>16.2</td><td>0</td><td>9.8</td><td>0</td><td>12.7</td><td>0</td><td>.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-09-04</td><td>17.9</td><td>0</td><td>7.8</td><td>0</td><td>11.8</td><td>0</td><td>.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-09-05</td><td>17.5</td><td>0</td><td>11.1</td><td>0</td><td>14</td><td>0</td><td>2.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-09-06</td><td>19.8</td><td>0</td><td>7.2</td><td>0</td><td>12.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-09-07</td><td>22.6</td><td>0</td><td>6.8</td><td>0</td><td>14.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-09-08</td><td>27</td><td>0</td><td>11.8</td><td>0</td><td>18.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-09-09</td><td>21.9</td><td>0</td><td>13.1</td><td>0</td><td>16.4</td><td>0</td><td>.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-09-10</td><td>24.1</td><td>0</td><td>14.3</td><td>0</td><td>16.9</td><td>0</td><td>6.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-09-11</td><td>15.6</td><td>0</td><td>7.8</td><td>0</td><td>11.3</td><td>0</td><td>.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-09-12</td><td>10.7</td><td>0</td><td>6.8</td><td>0</td><td>8.6</td><td>0</td><td>.7</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-09-13</td><td>15.5</td><td>0</td><td>5</td><td>0</td><td>9.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-09-14</td><td>15.5</td><td>0</td><td>5.4</td><td>0</td><td>10.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-09-15</td><td>17.7</td><td>0</td><td>6</td><td>0</td><td>10.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-09-16</td><td>15.3</td><td>0</td><td>1.8</td><td>0</td><td>8.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-09-17</td><td>19.8</td><td>0</td><td>3</td><td>0</td><td>10.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-09-18</td><td>15.8</td><td>0</td><td>9.5</td><td>0</td><td>11.6</td><td>0</td><td>.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-09-19</td><td>16.1</td><td>0</td><td>2.8</td><td>0</td><td>9.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-09-20</td><td>18.2</td><td>0</td><td>3.8</td><td>0</td><td>10.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-09-21</td><td>21.3</td><td>0</td><td>4.2</td><td>0</td><td>12.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-09-22</td><td>23.1</td><td>0</td><td>4.8</td><td>0</td><td>13.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-09-23</td><td>24.6</td><td>0</td><td>4.8</td><td>0</td><td>15.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-09-24</td><td>18.6</td><td>0</td><td>7.8</td><td>0</td><td>13.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-09-25</td><td>17.9</td><td>0</td><td>11.8</td><td>0</td><td>14.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-09-26</td><td>22.1</td><td>0</td><td>8.8</td><td>0</td><td>14.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-09-27</td><td>23.6</td><td>0</td><td>10.5</td><td>0</td><td>16.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-09-28</td><td>24.7</td><td>0</td><td>9.4</td><td>0</td><td>16.4</td><td>0</td><td>.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-09-29</td><td>21</td><td>0</td><td>14</td><td>0</td><td>16.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-09-30</td><td>18.4</td><td>0</td><td>7</td><td>0</td><td>10.8</td><td>0</td><td>.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-01</td><td>25.6</td><td>0</td><td>9.4</td><td>0</td><td>14.2</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-02</td><td>11.7</td><td>0</td><td>6</td><td>0</td><td>7</td><td>0</td><td>.7</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-03</td><td>10</td><td>0</td><td>2.8</td><td>0</td><td>5.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-04</td><td>12.7</td><td>0</td><td>-.2</td><td>0</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-05</td><td>13</td><td>0</td><td>-.2</td><td>0</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-06</td><td>13.9</td><td>0</td><td>-.4</td><td>0</td><td>5.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-07</td><td>19.1</td><td>0</td><td>8.1</td><td>0</td><td>12.2</td><td>0</td><td>2.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-08</td><td>18.1</td><td>0</td><td>12.3</td><td>0</td><td>14.4</td><td>0</td><td>8.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-09</td><td>16.3</td><td>0</td><td>4.7</td><td>0</td><td>7.2</td><td>0</td><td>1.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-10</td><td>4.8</td><td>0</td><td>.2</td><td>0</td><td>1.3</td><td>0</td><td>14.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-11</td><td>1.5</td><td>0</td><td>.1</td><td>0</td><td>.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-12</td><td>1.5</td><td>0</td><td>-.9</td><td>0</td><td>-.2</td><td>0</td><td>4.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-13</td><td>4.8</td><td>0</td><td>-3</td><td>0</td><td>-.3</td><td>0</td><td>1.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-14</td><td>9.6</td><td>0</td><td>.2</td><td>0</td><td>4.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-15</td><td>7.7</td><td>0</td><td>3.6</td><td>0</td><td>5.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-16</td><td>9.3</td><td>0</td><td>2</td><td>0</td><td>5</td><td>0</td><td>.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-17</td><td>8.1</td><td>0</td><td>3.1</td><td>0</td><td>5.1</td><td>0</td><td>1.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-18</td><td>7</td><td>0</td><td>4.6</td><td>0</td><td>5.6</td><td>0</td><td>.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-19</td><td>12.7</td><td>0</td><td>5.7</td><td>0</td><td>9.3</td><td>0</td><td>.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-20</td><td>10.4</td><td>0</td><td>2.9</td><td>0</td><td>6.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-21</td><td>11.4</td><td>0</td><td>5</td><td>0</td><td>7.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-22</td><td>5.3</td><td>0</td><td>-2.2</td><td>0</td><td>1.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-23</td><td>7.8</td><td>0</td><td>-2.8</td><td>0</td><td>1.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-24</td><td>7.8</td><td>0</td><td>-3.4</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-25</td><td>9</td><td>0</td><td>-3.7</td><td>0</td><td>1.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-26</td><td>8.6</td><td>0</td><td>-3.6</td><td>0</td><td>1.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-27</td><td>8.3</td><td>0</td><td>-.6</td><td>0</td><td>2.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-28</td><td>9.2</td><td>0</td><td>2.6</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-29</td><td>10.7</td><td>0</td><td>2.4</td><td>0</td><td>5.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-30</td><td>13.3</td><td>0</td><td>5.8</td><td>0</td><td>8.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-10-31</td><td>10.8</td><td>0</td><td>5.9</td><td>0</td><td>7.6</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-11-01</td><td>10.4</td><td>0</td><td>-.2</td><td>0</td><td>4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-11-02</td><td>11.3</td><td>0</td><td>-.4</td><td>0</td><td>5.3</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-11-03</td><td>11.2</td><td>0</td><td>5.2</td><td>0</td><td>7.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-11-04</td><td>8.3</td><td>0</td><td>-.2</td><td>0</td><td>4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-11-05</td><td>7.5</td><td>0</td><td>2.2</td><td>0</td><td>4.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-11-06</td><td>4</td><td>0</td><td>-1.4</td><td>0</td><td>1.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-11-07</td><td>7.6</td><td>0</td><td>2.9</td><td>0</td><td>5.3</td><td>0</td><td>.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-11-08</td><td>10.6</td><td>0</td><td>5.7</td><td>0</td><td>8.2</td><td>0</td><td>8.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-11-09</td><td>9.5</td><td>0</td><td>7.9</td><td>0</td><td>8.8</td><td>0</td><td>.7</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-11-10</td><td>12.3</td><td>0</td><td>9.3</td><td>0</td><td>10.7</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-11-11</td><td>13.2</td><td>0</td><td>7.7</td><td>0</td><td>10.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-11-12</td><td>12.5</td><td>0</td><td>9.9</td><td>0</td><td>11.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-11-13</td><td>11.6</td><td>0</td><td>4.5</td><td>0</td><td>6.7</td><td>0</td><td>5.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-11-14</td><td>6.5</td><td>0</td><td>4.5</td><td>0</td><td>5.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-11-15</td><td>6.7</td><td>0</td><td>3.1</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-11-16</td><td>7</td><td>0</td><td>2.7</td><td>0</td><td>3.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-11-17</td><td>5.1</td><td>0</td><td>.7</td><td>0</td><td>2.8</td><td>0</td><td>2.6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-11-18</td><td>6.6</td><td>0</td><td>1.8</td><td>0</td><td>4.1</td><td>0</td><td>4.8</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-11-19</td><td>3.4</td><td>0</td><td>-2.7</td><td>0</td><td>-.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>����??��               </td><td>1936-11-20</td><td>-1.5</td><td>0</td><td>-5.4</td><td>0</td><td>-4.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-11-21</td><td>-2.7</td><td>0</td><td>-7.2</td><td>0</td><td>-5.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-11-22</td><td>-2.3</td><td>0</td><td>-11.2</td><td>0</td><td>-6.6</td><td>0</td><td>1.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-11-23</td><td>-2.4</td><td>0</td><td>-11.2</td><td>0</td><td>-5.8</td><td>0</td><td>.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-11-24</td><td>-1.3</td><td>0</td><td>-6.2</td><td>0</td><td>-2.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-11-25</td><td>-1.4</td><td>0</td><td>-3.8</td><td>0</td><td>-2.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-11-26</td><td>-.3</td><td>0</td><td>-5.9</td><td>0</td><td>-3.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-11-27</td><td>-2.2</td><td>0</td><td>-7.2</td><td>0</td><td>-4.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-11-28</td><td>-2.4</td><td>0</td><td>-5.6</td><td>0</td><td>-3.4</td><td>0</td><td>2.8</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-11-29</td><td>-3.6</td><td>0</td><td>-8.7</td><td>0</td><td>-4.8</td><td>0</td><td>2.7</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-11-30</td><td>-2.2</td><td>0</td><td>-5.1</td><td>0</td><td>-3.8</td><td>0</td><td>5.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-01</td><td>-.2</td><td>0</td><td>-2.4</td><td>0</td><td>-1.1</td><td>0</td><td>.6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-02</td><td>1.8</td><td>0</td><td>-1.1</td><td>0</td><td>1</td><td>0</td><td>5.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-03</td><td>3</td><td>0</td><td>1.5</td><td>0</td><td>2.2</td><td>0</td><td>9.8</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-04</td><td>3.1</td><td>0</td><td>1.1</td><td>0</td><td>2.7</td><td>0</td><td>.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-05</td><td>4.8</td><td>0</td><td>2.7</td><td>0</td><td>3.7</td><td>0</td><td>3.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-06</td><td>4.5</td><td>0</td><td>1</td><td>0</td><td>1.9</td><td>0</td><td>.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-07</td><td>1.1</td><td>0</td><td>-2.3</td><td>0</td><td>-.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-08</td><td>.5</td><td>0</td><td>-4.6</td><td>0</td><td>-2.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-09</td><td>-2.2</td><td>0</td><td>-6.6</td><td>0</td><td>-4.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-10</td><td>-2.3</td><td>0</td><td>-6.8</td><td>0</td><td>-5.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-11</td><td>-2.1</td><td>0</td><td>-5.6</td><td>0</td><td>-4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-12</td><td>-1</td><td>0</td><td>-4.1</td><td>0</td><td>-2.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-13</td><td>-1.8</td><td>0</td><td>-5.2</td><td>0</td><td>-3.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-14</td><td>-4.2</td><td>0</td><td>-7.1</td><td>0</td><td>-6.1</td><td>0</td><td>.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-15</td><td>-1.4</td><td>0</td><td>-5.7</td><td>0</td><td>-3.7</td><td>0</td><td>.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-16</td><td>-2.5</td><td>0</td><td>-6.6</td><td>0</td><td>-5.8</td><td>0</td><td>.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-17</td><td>-1.1</td><td>0</td><td>-6.6</td><td>0</td><td>-3</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-18</td><td>.4</td><td>0</td><td>-1.6</td><td>0</td><td>-.3</td><td>0</td><td>.7</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-19</td><td>-1</td><td>0</td><td>-2.8</td><td>0</td><td>-2.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-20</td><td>-1.6</td><td>0</td><td>-2.7</td><td>0</td><td>-2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-21</td><td>-.3</td><td>0</td><td>-3.7</td><td>0</td><td>-2.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-22</td><td>-1</td><td>0</td><td>-5.9</td><td>0</td><td>-3.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-23</td><td>.4</td><td>0</td><td>-1.3</td><td>0</td><td>-.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-24</td><td>1.4</td><td>0</td><td>-1.3</td><td>0</td><td>.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-25</td><td>1.5</td><td>0</td><td>-.8</td><td>0</td><td>.6</td><td>0</td><td>.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-26</td><td>1</td><td>0</td><td>-5.5</td><td>0</td><td>-1</td><td>0</td><td>.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-27</td><td>-5.4</td><td>0</td><td>-10.6</td><td>0</td><td>-8</td><td>0</td><td>.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-28</td><td>.2</td><td>0</td><td>-12</td><td>0</td><td>-5.8</td><td>0</td><td>1.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-29</td><td>-.8</td><td>0</td><td>-9.1</td><td>0</td><td>-7.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-30</td><td>-5.3</td><td>0</td><td>-13.9</td><td>0</td><td>-9.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1936-12-31</td><td>-6.5</td><td>0</td><td>-16.6</td><td>0</td><td>-11.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-01</td><td>-1.7</td><td>0</td><td>-6.8</td><td>0</td><td>-3.8</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-02</td><td>.5</td><td>0</td><td>-2.1</td><td>0</td><td>-.2</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-03</td><td>.7</td><td>0</td><td>-.7</td><td>0</td><td>.1</td><td>0</td><td>1.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-04</td><td>1</td><td>0</td><td>-1.5</td><td>0</td><td>-.2</td><td>0</td><td>1.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-05</td><td>1.2</td><td>0</td><td>-1.6</td><td>0</td><td>-.1</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-06</td><td>.3</td><td>0</td><td>-5.1</td><td>0</td><td>-2.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-07</td><td>-1</td><td>0</td><td>-3.1</td><td>0</td><td>-1.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-08</td><td>2.1</td><td>0</td><td>-1.1</td><td>0</td><td>1.5</td><td>0</td><td>1.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-09</td><td>1.2</td><td>0</td><td>-.4</td><td>0</td><td>.2</td><td>0</td><td>.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-10</td><td>0</td><td>0</td><td>-6.4</td><td>0</td><td>-3.8</td><td>0</td><td>.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-11</td><td>-5</td><td>0</td><td>-7.6</td><td>0</td><td>-6.6</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-12</td><td>-6.8</td><td>0</td><td>-10</td><td>0</td><td>-8.4</td><td>0</td><td>1.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-13</td><td>-8.3</td><td>0</td><td>-13.7</td><td>0</td><td>-11</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-14</td><td>-9.4</td><td>0</td><td>-15.8</td><td>0</td><td>-14</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-15</td><td>-10.4</td><td>0</td><td>-14.6</td><td>0</td><td>-12.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-16</td><td>-7.5</td><td>0</td><td>-15.7</td><td>0</td><td>-11.7</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-17</td><td>-7.5</td><td>0</td><td>-14.8</td><td>0</td><td>-11.2</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-18</td><td>-11.4</td><td>0</td><td>-14.8</td><td>0</td><td>-12.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-19</td><td>-13</td><td>0</td><td>-18.5</td><td>0</td><td>-16.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-20</td><td>-13.8</td><td>0</td><td>-19.1</td><td>0</td><td>-16.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-21</td><td>-15</td><td>0</td><td>-19</td><td>0</td><td>-14.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-22</td><td>-14.7</td><td>0</td><td>-22.7</td><td>0</td><td>-19.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-23</td><td>-13</td><td>0</td><td>-19.3</td><td>0</td><td>-15.3</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-24</td><td>-16.6</td><td>0</td><td>-22.1</td><td>0</td><td>-19.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-25</td><td>-16.4</td><td>0</td><td>-21.3</td><td>0</td><td>-18.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-26</td><td>-14</td><td>0</td><td>-19.7</td><td>0</td><td>-16.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-27</td><td>-11.9</td><td>0</td><td>-26.1</td><td>0</td><td>-19.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-28</td><td>-15.3</td><td>0</td><td>-21.8</td><td>0</td><td>-18.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-29</td><td>-13.7</td><td>0</td><td>-20.4</td><td>0</td><td>-15.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-30</td><td>-13.8</td><td>0</td><td>-21.3</td><td>0</td><td>-18.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-01-31</td><td>-13.5</td><td>0</td><td>-24.8</td><td>0</td><td>-20</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-02-01</td><td>-12.6</td><td>0</td><td>-18</td><td>0</td><td>-14.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-02-02</td><td>-9.7</td><td>0</td><td>-18.2</td><td>0</td><td>-15</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-02-03</td><td>-10</td><td>0</td><td>-22.4</td><td>0</td><td>-16.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�����??�               </td><td>1937-02-04</td><td>-3</td><td>0</td><td>-12.6</td><td>0</td><td>-6.4</td><td>0</td><td>.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-02-05</td><td>.8</td><td>0</td><td>-3.1</td><td>0</td><td>.5</td><td>0</td><td>2.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-02-06</td><td>1.3</td><td>0</td><td>-2.1</td><td>0</td><td>-.6</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-02-07</td><td>1.8</td><td>0</td><td>-.2</td><td>0</td><td>.9</td><td>0</td><td>1.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-02-08</td><td>2</td><td>0</td><td>-.6</td><td>0</td><td>.4</td><td>0</td><td>.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-02-09</td><td>.8</td><td>0</td><td>-9.5</td><td>0</td><td>-5.3</td><td>0</td><td>3.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-02-10</td><td>-8.4</td><td>0</td><td>-18.4</td><td>0</td><td>-12.1</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-02-11</td><td>-6.2</td><td>0</td><td>-14.1</td><td>0</td><td>-8.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-02-12</td><td>-5</td><td>0</td><td>-7.2</td><td>0</td><td>-6.2</td><td>0</td><td>.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-02-13</td><td>1.6</td><td>0</td><td>-6.9</td><td>0</td><td>-.7</td><td>0</td><td>8.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-02-14</td><td>2.7</td><td>0</td><td>-6.9</td><td>0</td><td>-1.4</td><td>0</td><td>2.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-02-15</td><td>-4</td><td>0</td><td>-11.8</td><td>0</td><td>-7.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-02-16</td><td>-3.1</td><td>0</td><td>-9.1</td><td>0</td><td>-5.3</td><td>0</td><td>2.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-02-17</td><td>-2</td><td>0</td><td>-4.4</td><td>0</td><td>-3.1</td><td>0</td><td>.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-02-18</td><td>-3.4</td><td>0</td><td>-7.8</td><td>0</td><td>-5.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-02-19</td><td>-3.3</td><td>0</td><td>-8.3</td><td>0</td><td>-6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-02-20</td><td>-6</td><td>0</td><td>-16.7</td><td>0</td><td>-11.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-02-21</td><td>-1.3</td><td>0</td><td>-9.4</td><td>0</td><td>-5.4</td><td>0</td><td>9.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-02-22</td><td>1.8</td><td>0</td><td>-2.1</td><td>0</td><td>.3</td><td>0</td><td>11.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-02-23</td><td>2.8</td><td>0</td><td>-5.3</td><td>0</td><td>-.9</td><td>0</td><td>3.7</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-02-24</td><td>2.5</td><td>0</td><td>.5</td><td>0</td><td>1.2</td><td>0</td><td>.8</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-02-25</td><td>1.3</td><td>0</td><td>-3.3</td><td>0</td><td>-1</td><td>0</td><td>7.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-02-26</td><td>-2.5</td><td>0</td><td>-7.5</td><td>0</td><td>-5</td><td>0</td><td>.7</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-02-27</td><td>-4.7</td><td>0</td><td>-12.1</td><td>0</td><td>-8.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-02-28</td><td>-8.4</td><td>0</td><td>-20.3</td><td>0</td><td>-14.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-01</td><td>-7.3</td><td>0</td><td>-16.9</td><td>0</td><td>-12.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-02</td><td>-6.8</td><td>0</td><td>-15.8</td><td>0</td><td>-11.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-03</td><td>-9.4</td><td>0</td><td>-15.6</td><td>0</td><td>-12.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-04</td><td>-9.4</td><td>0</td><td>-16.1</td><td>0</td><td>-12.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-05</td><td>-8.4</td><td>0</td><td>-16.8</td><td>0</td><td>-13</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-06</td><td>-3.3</td><td>0</td><td>-14.1</td><td>0</td><td>-8.4</td><td>0</td><td>.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-07</td><td>0</td><td>0</td><td>-4.1</td><td>0</td><td>-2.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-08</td><td>1.7</td><td>0</td><td>-.8</td><td>0</td><td>.9</td><td>0</td><td>5.8</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-09</td><td>3.2</td><td>0</td><td>-.3</td><td>0</td><td>.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-10</td><td>3.3</td><td>0</td><td>-.2</td><td>0</td><td>1.4</td><td>0</td><td>.8</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-11</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>2.8</td><td>0</td><td>5.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-12</td><td>5</td><td>0</td><td>.3</td><td>0</td><td>.9</td><td>0</td><td>3.8</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-13</td><td>4.1</td><td>0</td><td>-2.6</td><td>0</td><td>-.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-14</td><td>3.2</td><td>0</td><td>-2.1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-15</td><td>3</td><td>0</td><td>-.3</td><td>0</td><td>1.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-16</td><td>6</td><td>0</td><td>1.3</td><td>0</td><td>3.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-17</td><td>3.7</td><td>0</td><td>1.2</td><td>0</td><td>2</td><td>0</td><td>3.7</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-18</td><td>2.7</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>.7</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-19</td><td>3.5</td><td>0</td><td>.4</td><td>0</td><td>1.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-20</td><td>3.4</td><td>0</td><td>-.1</td><td>0</td><td>1.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-21</td><td>2.9</td><td>0</td><td>.4</td><td>0</td><td>1.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-22</td><td>10.3</td><td>0</td><td>.8</td><td>0</td><td>5.2</td><td>0</td><td>.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-23</td><td>11</td><td>0</td><td>-.3</td><td>0</td><td>4.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-24</td><td>14.4</td><td>0</td><td>1</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-25</td><td>12.7</td><td>0</td><td>3.6</td><td>0</td><td>8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-26</td><td>11</td><td>0</td><td>3.2</td><td>0</td><td>7.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-27</td><td>9.4</td><td>0</td><td>5.5</td><td>0</td><td>7</td><td>0</td><td>16.6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-28</td><td>6.8</td><td>0</td><td>4.8</td><td>0</td><td>6.1</td><td>0</td><td>12.8</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-29</td><td>14.2</td><td>0</td><td>1.3</td><td>0</td><td>8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-30</td><td>13.3</td><td>0</td><td>1.1</td><td>0</td><td>8.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-03-31</td><td>11.4</td><td>0</td><td>2.5</td><td>0</td><td>5.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-04-01</td><td>4.6</td><td>0</td><td>-2.1</td><td>0</td><td>1.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-04-02</td><td>8.3</td><td>0</td><td>-.7</td><td>0</td><td>3.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-04-03</td><td>8.3</td><td>0</td><td>-.5</td><td>0</td><td>3.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-04-04</td><td>6.5</td><td>0</td><td>-1.5</td><td>0</td><td>2.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-04-05</td><td>6.8</td><td>0</td><td>.5</td><td>0</td><td>3.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-04-06</td><td>8.3</td><td>0</td><td>-3.3</td><td>0</td><td>2.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-04-07</td><td>8</td><td>0</td><td>-2.8</td><td>0</td><td>2.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-04-08</td><td>8.7</td><td>0</td><td>1</td><td>0</td><td>3.5</td><td>0</td><td>.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-04-09</td><td>10.4</td><td>0</td><td>-2.6</td><td>0</td><td>3.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-04-10</td><td>10.7</td><td>0</td><td>-1.8</td><td>0</td><td>4.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-04-11</td><td>9.6</td><td>0</td><td>-.1</td><td>0</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-04-12</td><td>10</td><td>0</td><td>.5</td><td>0</td><td>4.6</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-04-13</td><td>10.7</td><td>0</td><td>-2</td><td>0</td><td>4.8</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-04-14</td><td>15.1</td><td>0</td><td>-.1</td><td>0</td><td>7.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-04-15</td><td>15.7</td><td>0</td><td>1.7</td><td>0</td><td>8.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-04-16</td><td>15.6</td><td>0</td><td>2.5</td><td>0</td><td>8.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-04-17</td><td>12.5</td><td>0</td><td>3.5</td><td>0</td><td>8.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-04-18</td><td>14.4</td><td>0</td><td>5.4</td><td>0</td><td>9.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-04-19</td><td>12.4</td><td>0</td><td>5.8</td><td>0</td><td>8.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-04-20</td><td>14.9</td><td>0</td><td>7.8</td><td>0</td><td>10.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-04-21</td><td>19.5</td><td>0</td><td>7.2</td><td>0</td><td>13.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-04-22</td><td>19.9</td><td>0</td><td>10.5</td><td>0</td><td>14.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-04-23</td><td>16.7</td><td>0</td><td>9</td><td>0</td><td>12</td><td>0</td><td>.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-04-24</td><td>26.1</td><td>0</td><td>9.6</td><td>0</td><td>17</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-04-25</td><td>23.1</td><td>0</td><td>9.8</td><td>0</td><td>12.1</td><td>0</td><td>18</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-04-26</td><td>16.9</td><td>0</td><td>5.5</td><td>0</td><td>10.6</td><td>0</td><td>.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-04-27</td><td>18.6</td><td>0</td><td>4.5</td><td>0</td><td>11.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-04-28</td><td>15.4</td><td>0</td><td>10.3</td><td>0</td><td>12.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-04-29</td><td>18.4</td><td>0</td><td>9.3</td><td>0</td><td>13.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-04-30</td><td>17.9</td><td>0</td><td>11</td><td>0</td><td>13.7</td><td>0</td><td>15.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-01</td><td>13.7</td><td>0</td><td>7</td><td>0</td><td>11.1</td><td>0</td><td>3.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-02</td><td>18</td><td>0</td><td>7.1</td><td>0</td><td>12.4</td><td>0</td><td>.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-03</td><td>18.2</td><td>0</td><td>5.7</td><td>0</td><td>11.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-04</td><td>19.1</td><td>0</td><td>3.6</td><td>0</td><td>12.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-05</td><td>21.7</td><td>0</td><td>6.3</td><td>0</td><td>14.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-06</td><td>17.5</td><td>0</td><td>5.4</td><td>0</td><td>12.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-07</td><td>14.3</td><td>0</td><td>1.1</td><td>0</td><td>8.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-08</td><td>21.1</td><td>0</td><td>4.6</td><td>0</td><td>13.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-09</td><td>22.7</td><td>0</td><td>9.3</td><td>0</td><td>16</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-10</td><td>19.7</td><td>0</td><td>11</td><td>0</td><td>15.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-11</td><td>20.9</td><td>0</td><td>5.8</td><td>0</td><td>14.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-12</td><td>21.4</td><td>0</td><td>9.4</td><td>0</td><td>15.2</td><td>0</td><td>.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-13</td><td>24.3</td><td>0</td><td>8.3</td><td>0</td><td>17.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-14</td><td>26.9</td><td>0</td><td>11</td><td>0</td><td>19.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-15</td><td>26.9</td><td>0</td><td>13.2</td><td>0</td><td>20.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-16</td><td>29.2</td><td>0</td><td>13.3</td><td>0</td><td>21.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-17</td><td>27.2</td><td>0</td><td>14.8</td><td>0</td><td>21.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-18</td><td>27.9</td><td>0</td><td>14.4</td><td>0</td><td>20.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-19</td><td>26.1</td><td>0</td><td>15.1</td><td>0</td><td>21.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-20</td><td>29.3</td><td>0</td><td>16.1</td><td>0</td><td>22.6</td><td>0</td><td>.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-21</td><td>26.4</td><td>0</td><td>17.6</td><td>0</td><td>21.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-22</td><td>23.2</td><td>0</td><td>10</td><td>0</td><td>17.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-23</td><td>23</td><td>0</td><td>8.7</td><td>0</td><td>17.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-24</td><td>27.7</td><td>0</td><td>11.4</td><td>0</td><td>19.8</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-25</td><td>25.4</td><td>0</td><td>11</td><td>0</td><td>19.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-26</td><td>25.8</td><td>0</td><td>10.3</td><td>0</td><td>17.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-27</td><td>20.7</td><td>0</td><td>8.4</td><td>0</td><td>15.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-28</td><td>26.1</td><td>0</td><td>10.8</td><td>0</td><td>19.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-29</td><td>23.3</td><td>0</td><td>15.4</td><td>0</td><td>17.8</td><td>0</td><td>.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-30</td><td>18.2</td><td>0</td><td>8.8</td><td>0</td><td>11.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-05-31</td><td>14.9</td><td>0</td><td>7.6</td><td>0</td><td>10.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-06-01</td><td>20.5</td><td>0</td><td>2.2</td><td>0</td><td>13.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-06-02</td><td>24.7</td><td>0</td><td>9.7</td><td>0</td><td>16.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-06-03</td><td>22.7</td><td>0</td><td>11.2</td><td>0</td><td>16.6</td><td>0</td><td>.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-06-04</td><td>18.9</td><td>0</td><td>7.6</td><td>0</td><td>13.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-06-05</td><td>21.3</td><td>0</td><td>7.7</td><td>0</td><td>14.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-06-06</td><td>14.3</td><td>0</td><td>9</td><td>0</td><td>10.5</td><td>0</td><td>11.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-06-07</td><td>17.4</td><td>0</td><td>9.6</td><td>0</td><td>13.2</td><td>0</td><td>8.6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-06-08</td><td>15.3</td><td>0</td><td>10.8</td><td>0</td><td>12.9</td><td>0</td><td>1.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-06-09</td><td>16.9</td><td>0</td><td>11.1</td><td>0</td><td>13.2</td><td>0</td><td>5.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-06-10</td><td>20.5</td><td>0</td><td>10</td><td>0</td><td>14.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-06-11</td><td>23.3</td><td>0</td><td>10.7</td><td>0</td><td>17.6</td><td>0</td><td>.8</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-06-12</td><td>26.9</td><td>0</td><td>15.4</td><td>0</td><td>19.6</td><td>0</td><td>9.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-06-13</td><td>27.6</td><td>0</td><td>14.4</td><td>0</td><td>20.5</td><td>0</td><td>.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-06-14</td><td>22</td><td>0</td><td>14.7</td><td>0</td><td>17</td><td>0</td><td>.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-06-15</td><td>17.8</td><td>0</td><td>7.2</td><td>0</td><td>13.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-06-16</td><td>21.8</td><td>0</td><td>7.7</td><td>0</td><td>15.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-06-17</td><td>23.8</td><td>0</td><td>7.5</td><td>0</td><td>17.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-06-18</td><td>25.4</td><td>0</td><td>9.8</td><td>0</td><td>19</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-06-19</td><td>25.7</td><td>0</td><td>11.2</td><td>0</td><td>19.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-06-20</td><td>26.2</td><td>0</td><td>10.8</td><td>0</td><td>19.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-06-21</td><td>24.5</td><td>0</td><td>13.7</td><td>0</td><td>18</td><td>0</td><td>.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-06-22</td><td>26.1</td><td>0</td><td>10.4</td><td>0</td><td>19.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-06-23</td><td>27.4</td><td>0</td><td>11.8</td><td>0</td><td>21.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-06-24</td><td>28.8</td><td>0</td><td>12.1</td><td>0</td><td>22</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-06-25</td><td>29.9</td><td>0</td><td>12.4</td><td>0</td><td>23.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-06-26</td><td>31.3</td><td>0</td><td>14.6</td><td>0</td><td>23.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-06-27</td><td>33</td><td>0</td><td>16.8</td><td>0</td><td>25.2</td><td>0</td><td>1.7</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-06-28</td><td>32.1</td><td>0</td><td>16.3</td><td>0</td><td>23.3</td><td>0</td><td>3.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-06-29</td><td>31.8</td><td>0</td><td>14.4</td><td>0</td><td>23.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-06-30</td><td>31.6</td><td>0</td><td>15.7</td><td>0</td><td>23.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-01</td><td>31.4</td><td>0</td><td>16.1</td><td>0</td><td>24.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-02</td><td>34.9</td><td>0</td><td>18.8</td><td>0</td><td>25.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-03</td><td>32</td><td>0</td><td>20.5</td><td>0</td><td>25</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-04</td><td>26.8</td><td>0</td><td>18.2</td><td>0</td><td>22.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-05</td><td>26.3</td><td>0</td><td>13.6</td><td>0</td><td>20.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-06</td><td>23.3</td><td>0</td><td>13.4</td><td>0</td><td>17.8</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-07</td><td>26.4</td><td>0</td><td>11.2</td><td>0</td><td>19</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-08</td><td>27.7</td><td>0</td><td>15.3</td><td>0</td><td>22</td><td>0</td><td>2.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-09</td><td>26.1</td><td>0</td><td>15.8</td><td>0</td><td>20.3</td><td>0</td><td>5.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-10</td><td>26.4</td><td>0</td><td>14</td><td>0</td><td>20.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-11</td><td>28</td><td>0</td><td>13.1</td><td>0</td><td>21.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-12</td><td>31.6</td><td>0</td><td>15.2</td><td>0</td><td>21.5</td><td>0</td><td>2.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-13</td><td>25.9</td><td>0</td><td>17.4</td><td>0</td><td>19.3</td><td>0</td><td>8.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-14</td><td>24.8</td><td>0</td><td>12.5</td><td>0</td><td>18.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-15</td><td>22.6</td><td>0</td><td>12.9</td><td>0</td><td>18</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-16</td><td>26.3</td><td>0</td><td>12.6</td><td>0</td><td>19.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-17</td><td>29.3</td><td>0</td><td>14</td><td>0</td><td>22.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-18</td><td>24.7</td><td>0</td><td>12.4</td><td>0</td><td>18.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-19</td><td>25.8</td><td>0</td><td>15.3</td><td>0</td><td>20</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-20</td><td>27.2</td><td>0</td><td>12.1</td><td>0</td><td>19.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-21</td><td>29.8</td><td>0</td><td>14.2</td><td>0</td><td>23.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-22</td><td>31.6</td><td>0</td><td>16.3</td><td>0</td><td>24.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-23</td><td>32.2</td><td>0</td><td>16.5</td><td>0</td><td>25.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-24</td><td>27</td><td>0</td><td>19.1</td><td>0</td><td>22.2</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-25</td><td>27</td><td>0</td><td>12.4</td><td>0</td><td>20.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-26</td><td>30.9</td><td>0</td><td>15.9</td><td>0</td><td>22.9</td><td>0</td><td>1.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-27</td><td>30.8</td><td>0</td><td>16.4</td><td>0</td><td>24.5</td><td>0</td><td>.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-28</td><td>27.1</td><td>0</td><td>19.3</td><td>0</td><td>21.4</td><td>0</td><td>.8</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-29</td><td>27.8</td><td>0</td><td>15.5</td><td>0</td><td>20.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-30</td><td>24.7</td><td>0</td><td>13.9</td><td>0</td><td>19.4</td><td>0</td><td>4.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-07-31</td><td>27.6</td><td>0</td><td>12.1</td><td>0</td><td>20.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-01</td><td>29.5</td><td>0</td><td>13.8</td><td>0</td><td>21.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-02</td><td>32.2</td><td>0</td><td>14.7</td><td>0</td><td>24.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-03</td><td>32.4</td><td>0</td><td>17.2</td><td>0</td><td>25.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-04</td><td>27.8</td><td>0</td><td>17.1</td><td>0</td><td>19.9</td><td>0</td><td>12.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-05</td><td>24.4</td><td>0</td><td>14.4</td><td>0</td><td>18.5</td><td>0</td><td>.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-06</td><td>22.8</td><td>0</td><td>16.7</td><td>0</td><td>18.9</td><td>0</td><td>.8</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-07</td><td>23.3</td><td>0</td><td>15.4</td><td>0</td><td>18.3</td><td>0</td><td>10.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-08</td><td>24.7</td><td>0</td><td>16.8</td><td>0</td><td>19.8</td><td>0</td><td>23.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-09</td><td>21</td><td>0</td><td>16.2</td><td>0</td><td>17.8</td><td>0</td><td>57.8</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-10</td><td>23.5</td><td>0</td><td>17.6</td><td>0</td><td>19.9</td><td>0</td><td>1.6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-11</td><td>24.1</td><td>0</td><td>16.3</td><td>0</td><td>19.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-12</td><td>24</td><td>0</td><td>17.1</td><td>0</td><td>19.6</td><td>0</td><td>.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-13</td><td>23.5</td><td>0</td><td>15.8</td><td>0</td><td>19.8</td><td>0</td><td>1.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-14</td><td>26.6</td><td>0</td><td>15.6</td><td>0</td><td>20.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-15</td><td>27.8</td><td>0</td><td>16.2</td><td>0</td><td>22.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-16</td><td>27.6</td><td>0</td><td>17</td><td>0</td><td>22</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-17</td><td>28.1</td><td>0</td><td>15.8</td><td>0</td><td>21.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-18</td><td>29.2</td><td>0</td><td>16.2</td><td>0</td><td>22.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-19</td><td>26.8</td><td>0</td><td>18.2</td><td>0</td><td>22.1</td><td>0</td><td>.7</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-20</td><td>24</td><td>0</td><td>14.5</td><td>0</td><td>19.6</td><td>0</td><td>2.8</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-21</td><td>23.2</td><td>0</td><td>15.8</td><td>0</td><td>18.2</td><td>0</td><td>2.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-22</td><td>24</td><td>0</td><td>14</td><td>0</td><td>18.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-23</td><td>26.2</td><td>0</td><td>15.8</td><td>0</td><td>20.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-24</td><td>27.6</td><td>0</td><td>15.1</td><td>0</td><td>20.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-25</td><td>26.3</td><td>0</td><td>16.3</td><td>0</td><td>20.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-26</td><td>21.7</td><td>0</td><td>13.9</td><td>0</td><td>17</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-27</td><td>21.4</td><td>0</td><td>14.6</td><td>0</td><td>17</td><td>0</td><td>3.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-28</td><td>22.1</td><td>0</td><td>14.3</td><td>0</td><td>17.8</td><td>0</td><td>3.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-29</td><td>24</td><td>0</td><td>12.8</td><td>0</td><td>17.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-30</td><td>25.9</td><td>0</td><td>13</td><td>0</td><td>19.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-08-31</td><td>23.6</td><td>0</td><td>16.3</td><td>0</td><td>20.2</td><td>0</td><td>3.8</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-09-01</td><td>22.3</td><td>0</td><td>14.5</td><td>0</td><td>17.1</td><td>0</td><td>.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-09-02</td><td>22.6</td><td>0</td><td>11.2</td><td>0</td><td>16.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-09-03</td><td>23</td><td>0</td><td>11.8</td><td>0</td><td>17.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-09-04</td><td>24.9</td><td>0</td><td>12.4</td><td>0</td><td>18.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-09-05</td><td>24</td><td>0</td><td>11.4</td><td>0</td><td>17.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-09-06</td><td>23.9</td><td>0</td><td>10.3</td><td>0</td><td>16.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-09-07</td><td>21.8</td><td>0</td><td>9.6</td><td>0</td><td>15.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-09-08</td><td>24.1</td><td>0</td><td>9.2</td><td>0</td><td>16.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-09-09</td><td>26.1</td><td>0</td><td>12.3</td><td>0</td><td>18.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-09-10</td><td>27.1</td><td>0</td><td>11.3</td><td>0</td><td>19</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-09-11</td><td>27.3</td><td>0</td><td>15.8</td><td>0</td><td>21.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-09-12</td><td>22.8</td><td>0</td><td>13.4</td><td>0</td><td>18.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-09-13</td><td>29.4</td><td>0</td><td>14.5</td><td>0</td><td>20.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-09-14</td><td>28.9</td><td>0</td><td>14.3</td><td>0</td><td>20.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-09-15</td><td>22</td><td>0</td><td>10.2</td><td>0</td><td>15.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-09-16</td><td>23.8</td><td>0</td><td>9.5</td><td>0</td><td>16.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-09-17</td><td>22.6</td><td>0</td><td>14.1</td><td>0</td><td>17.6</td><td>0</td><td>1.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-09-18</td><td>24.3</td><td>0</td><td>8.3</td><td>0</td><td>16</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-09-19</td><td>27.8</td><td>0</td><td>10.8</td><td>0</td><td>18.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-09-20</td><td>29.2</td><td>0</td><td>14.2</td><td>0</td><td>20.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-09-21</td><td>29.8</td><td>0</td><td>15.3</td><td>0</td><td>21.1</td><td>0</td><td>.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-09-22</td><td>28.2</td><td>0</td><td>13.4</td><td>0</td><td>20.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-09-23</td><td>27.4</td><td>0</td><td>12</td><td>0</td><td>19</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-09-24</td><td>27.2</td><td>0</td><td>10.8</td><td>0</td><td>18.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-09-25</td><td>27.9</td><td>0</td><td>10.8</td><td>0</td><td>19.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-09-26</td><td>30.4</td><td>0</td><td>14.5</td><td>0</td><td>21.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-09-27</td><td>22.7</td><td>0</td><td>12.8</td><td>0</td><td>14.8</td><td>0</td><td>5.6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-09-28</td><td>13.2</td><td>0</td><td>11</td><td>0</td><td>12.6</td><td>0</td><td>5.8</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-09-29</td><td>12.6</td><td>0</td><td>8.8</td><td>0</td><td>10.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-09-30</td><td>16.6</td><td>0</td><td>6.8</td><td>0</td><td>10.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-01</td><td>13.6</td><td>0</td><td>7.3</td><td>0</td><td>9.4</td><td>0</td><td>.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-02</td><td>14.9</td><td>0</td><td>1.8</td><td>0</td><td>8.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-03</td><td>16.4</td><td>0</td><td>10</td><td>0</td><td>12.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-04</td><td>12.1</td><td>0</td><td>3.2</td><td>0</td><td>7.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-05</td><td>14.9</td><td>0</td><td>.2</td><td>0</td><td>7.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-06</td><td>11.9</td><td>0</td><td>6.6</td><td>0</td><td>9.2</td><td>0</td><td>4.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-07</td><td>13.8</td><td>0</td><td>7.6</td><td>0</td><td>9.8</td><td>0</td><td>1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-08</td><td>14.9</td><td>0</td><td>4.3</td><td>0</td><td>9.5</td><td>0</td><td>.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-09</td><td>14.6</td><td>0</td><td>9.6</td><td>0</td><td>11</td><td>0</td><td>9.7</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-10</td><td>12.3</td><td>0</td><td>8.1</td><td>0</td><td>9.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-11</td><td>19.4</td><td>0</td><td>9.5</td><td>0</td><td>13.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-12</td><td>15.4</td><td>0</td><td>6</td><td>0</td><td>8.7</td><td>0</td><td>1.6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-13</td><td>9.4</td><td>0</td><td>3.5</td><td>0</td><td>5.6</td><td>0</td><td>1.7</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-14</td><td>7.1</td><td>0</td><td>-.4</td><td>0</td><td>2.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-15</td><td>6.7</td><td>0</td><td>-1.7</td><td>0</td><td>1.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-16</td><td>5.3</td><td>0</td><td>-3.2</td><td>0</td><td>.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-17</td><td>7.6</td><td>0</td><td>-5.4</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-18</td><td>8.9</td><td>0</td><td>-3.6</td><td>0</td><td>2.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-19</td><td>8.6</td><td>0</td><td>5.1</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-20</td><td>11.1</td><td>0</td><td>3.1</td><td>0</td><td>6.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-21</td><td>12</td><td>0</td><td>-2.4</td><td>0</td><td>3.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-22</td><td>13.1</td><td>0</td><td>-.1</td><td>0</td><td>5.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-23</td><td>11.6</td><td>0</td><td>-2.6</td><td>0</td><td>4.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-24</td><td>11.6</td><td>0</td><td>1.5</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-25</td><td>13</td><td>0</td><td>7</td><td>0</td><td>9.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-26</td><td>11.9</td><td>0</td><td>8.4</td><td>0</td><td>10.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-27</td><td>13</td><td>0</td><td>7.5</td><td>0</td><td>10</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-28</td><td>10.9</td><td>0</td><td>8.1</td><td>0</td><td>9.1</td><td>0</td><td>2.6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-29</td><td>9.2</td><td>0</td><td>5</td><td>0</td><td>6.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-30</td><td>10.5</td><td>0</td><td>5.3</td><td>0</td><td>7.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-10-31</td><td>8.6</td><td>0</td><td>3.4</td><td>0</td><td>5.8</td><td>0</td><td>1.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-11-01</td><td>10.3</td><td>0</td><td>5.3</td><td>0</td><td>7</td><td>0</td><td>2.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-11-02</td><td>8.1</td><td>0</td><td>2.5</td><td>0</td><td>5.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-11-03</td><td>7.6</td><td>0</td><td>5.5</td><td>0</td><td>6.4</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-11-04</td><td>9.8</td><td>0</td><td>4.5</td><td>0</td><td>7.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-11-05</td><td>10.6</td><td>0</td><td>5.5</td><td>0</td><td>7.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-11-06</td><td>7.4</td><td>0</td><td>-1.4</td><td>0</td><td>1.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-11-07</td><td>8.9</td><td>0</td><td>-3.9</td><td>0</td><td>1.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-11-08</td><td>5.6</td><td>0</td><td>-4.1</td><td>0</td><td>-.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-11-09</td><td>1.6</td><td>0</td><td>-2.6</td><td>0</td><td>-.3</td><td>0</td><td>1.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-11-10</td><td>6.5</td><td>0</td><td>.5</td><td>0</td><td>3.4</td><td>0</td><td>.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-11-11</td><td>8.6</td><td>0</td><td>5</td><td>0</td><td>6.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-11-12</td><td>8.5</td><td>0</td><td>5.2</td><td>0</td><td>6.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-11-13</td><td>7.7</td><td>0</td><td>3.3</td><td>0</td><td>5</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-11-14</td><td>7.5</td><td>0</td><td>1.2</td><td>0</td><td>4.4</td><td>0</td><td>12.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-11-15</td><td>2.7</td><td>0</td><td>-3.1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-11-16</td><td>5.5</td><td>0</td><td>-1.2</td><td>0</td><td>1.6</td><td>0</td><td>2.8</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-11-17</td><td>5.5</td><td>0</td><td>-1.3</td><td>0</td><td>.2</td><td>0</td><td>15.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-11-18</td><td>1.3</td><td>0</td><td>-2.4</td><td>0</td><td>-.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-11-19</td><td>5.3</td><td>0</td><td>1.2</td><td>0</td><td>3.4</td><td>0</td><td>.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-11-20</td><td>2.6</td><td>0</td><td>-1.5</td><td>0</td><td>-.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-11-21</td><td>1</td><td>0</td><td>-2.7</td><td>0</td><td>-.6</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-11-22</td><td>1.2</td><td>0</td><td>-.6</td><td>0</td><td>.2</td><td>0</td><td>7</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-11-23</td><td>1.4</td><td>0</td><td>.4</td><td>0</td><td>.6</td><td>0</td><td>1.7</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-11-24</td><td>3.8</td><td>0</td><td>-.1</td><td>0</td><td>.1</td><td>0</td><td>7.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-11-25</td><td>0</td><td>0</td><td>-2.1</td><td>0</td><td>-1.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-11-26</td><td>.7</td><td>0</td><td>-1.8</td><td>0</td><td>-.1</td><td>0</td><td>9.8</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-11-27</td><td>.6</td><td>0</td><td>-4.8</td><td>0</td><td>-2.9</td><td>0</td><td>1.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-11-28</td><td>.8</td><td>0</td><td>-4.1</td><td>0</td><td>-1.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-11-29</td><td>-.4</td><td>0</td><td>-7</td><td>0</td><td>-3.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-11-30</td><td>-2.2</td><td>0</td><td>-4.5</td><td>0</td><td>-3.7</td><td>0</td><td>.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-12-01</td><td>-3.2</td><td>0</td><td>-7.3</td><td>0</td><td>-4.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-12-02</td><td>0</td><td>0</td><td>-4.6</td><td>0</td><td>-2.2</td><td>0</td><td>1.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-12-03</td><td>2.8</td><td>0</td><td>-.4</td><td>0</td><td>1.6</td><td>0</td><td>2.6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-12-04</td><td>9.6</td><td>0</td><td>2.5</td><td>0</td><td>5.6</td><td>0</td><td>1.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-12-05</td><td>10.3</td><td>0</td><td>5.8</td><td>0</td><td>8.1</td><td>0</td><td>9.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-12-06</td><td>10.4</td><td>0</td><td>4.2</td><td>0</td><td>6.3</td><td>0</td><td>14.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-12-07</td><td>8.3</td><td>0</td><td>3</td><td>0</td><td>5.6</td><td>0</td><td>2.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-12-08</td><td>3.3</td><td>0</td><td>-5.1</td><td>0</td><td>-1.6</td><td>0</td><td>.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-12-09</td><td>-1.6</td><td>0</td><td>-4.6</td><td>0</td><td>-2.8</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-12-10</td><td>-.5</td><td>0</td><td>-5.6</td><td>0</td><td>-3.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-12-11</td><td>5.5</td><td>0</td><td>-.7</td><td>0</td><td>3.3</td><td>0</td><td>.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-12-12</td><td>4.3</td><td>0</td><td>-1.4</td><td>0</td><td>-.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-12-13</td><td>-.2</td><td>0</td><td>-1.7</td><td>0</td><td>-1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-12-14</td><td>.4</td><td>0</td><td>-2.1</td><td>0</td><td>-.9</td><td>0</td><td>.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-12-15</td><td>6.3</td><td>0</td><td>.2</td><td>0</td><td>2.6</td><td>0</td><td>13.8</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-12-16</td><td>6.4</td><td>0</td><td>2.6</td><td>0</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-12-17</td><td>6.6</td><td>0</td><td>3</td><td>0</td><td>5.6</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-12-18</td><td>8.6</td><td>0</td><td>2.4</td><td>0</td><td>5.1</td><td>0</td><td>1.8</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-12-19</td><td>6.7</td><td>0</td><td>2.7</td><td>0</td><td>3.6</td><td>0</td><td>.7</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-12-20</td><td>8.7</td><td>0</td><td>2.8</td><td>0</td><td>5.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-12-21</td><td>8.6</td><td>0</td><td>.3</td><td>0</td><td>.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-12-22</td><td>.4</td><td>0</td><td>-2.6</td><td>0</td><td>-1.3</td><td>0</td><td>5.6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-12-23</td><td>-.4</td><td>0</td><td>-3.2</td><td>0</td><td>-1.7</td><td>0</td><td>4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-12-24</td><td>1.4</td><td>0</td><td>-2.2</td><td>0</td><td>.2</td><td>0</td><td>3.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-12-25</td><td>-.1</td><td>0</td><td>-5.5</td><td>0</td><td>-3.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-12-26</td><td>-5</td><td>0</td><td>-7.1</td><td>0</td><td>-6.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-12-27</td><td>-6.3</td><td>0</td><td>-10.6</td><td>0</td><td>-9</td><td>0</td><td>1.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-12-28</td><td>-6.6</td><td>0</td><td>-9.1</td><td>0</td><td>-7.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-12-29</td><td>-6.8</td><td>0</td><td>-8.1</td><td>0</td><td>-7.5</td><td>0</td><td>.6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>����??��               </td><td>1937-12-30</td><td>-7.1</td><td>0</td><td>-12.8</td><td>0</td><td>-9.9</td><td>0</td><td>1.6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1937-12-31</td><td>-5.2</td><td>0</td><td>-10.6</td><td>0</td><td>-7.5</td><td>0</td><td>.6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-01</td><td>-4.8</td><td>0</td><td>-8.8</td><td>0</td><td>-6.7</td><td>0</td><td>1.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-02</td><td>-8.3</td><td>0</td><td>-17.4</td><td>0</td><td>-11.8</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-03</td><td>-1.1</td><td>0</td><td>-17.1</td><td>0</td><td>-11</td><td>0</td><td>1.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-04</td><td>-11.3</td><td>0</td><td>-19.1</td><td>0</td><td>-15</td><td>0</td><td>.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-05</td><td>-9.5</td><td>0</td><td>-21.1</td><td>0</td><td>-15.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-06</td><td>-7.5</td><td>0</td><td>-9.8</td><td>0</td><td>-8.6</td><td>0</td><td>1.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-07</td><td>-8.8</td><td>0</td><td>-13.6</td><td>0</td><td>-12</td><td>0</td><td>1.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-08</td><td>-10.5</td><td>0</td><td>-16.4</td><td>0</td><td>-13</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-09</td><td>-10.2</td><td>0</td><td>-19.2</td><td>0</td><td>-13.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-10</td><td>-9.2</td><td>0</td><td>-14.3</td><td>0</td><td>-12.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-11</td><td>-2</td><td>0</td><td>-15.4</td><td>0</td><td>-9.3</td><td>0</td><td>.6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-12</td><td>1.9</td><td>0</td><td>-2.1</td><td>0</td><td>1.2</td><td>0</td><td>9.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-13</td><td>1</td><td>0</td><td>-1.6</td><td>0</td><td>-.3</td><td>0</td><td>5.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-14</td><td>-1.1</td><td>0</td><td>-2.1</td><td>0</td><td>-1.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-15</td><td>.3</td><td>0</td><td>-3.8</td><td>0</td><td>-1.7</td><td>0</td><td>.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-16</td><td>.4</td><td>0</td><td>-3.8</td><td>0</td><td>-1.4</td><td>0</td><td>.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-17</td><td>-2.6</td><td>0</td><td>-4.4</td><td>0</td><td>-3.5</td><td>0</td><td>.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-18</td><td>-2.3</td><td>0</td><td>-4.6</td><td>0</td><td>-3.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-19</td><td>.7</td><td>0</td><td>-5.1</td><td>0</td><td>-2.1</td><td>0</td><td>.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-20</td><td>.5</td><td>0</td><td>-2</td><td>0</td><td>-.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-21</td><td>-.9</td><td>0</td><td>-6.6</td><td>0</td><td>-2.6</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-22</td><td>-2.2</td><td>0</td><td>-11.6</td><td>0</td><td>-8.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-23</td><td>-6.7</td><td>0</td><td>-14.1</td><td>0</td><td>-9.1</td><td>0</td><td>.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-24</td><td>-4.4</td><td>0</td><td>-9.1</td><td>0</td><td>-6.7</td><td>0</td><td>2.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-25</td><td>.4</td><td>0</td><td>-5</td><td>0</td><td>-2</td><td>0</td><td>1.7</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-26</td><td>.6</td><td>0</td><td>-4.1</td><td>0</td><td>-4.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-27</td><td>1.5</td><td>0</td><td>-3.6</td><td>0</td><td>0</td><td>0</td><td>.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-28</td><td>1.5</td><td>0</td><td>-5.6</td><td>0</td><td>-2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-29</td><td>2.7</td><td>0</td><td>-.7</td><td>0</td><td>.5</td><td>0</td><td>1.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-30</td><td>4.4</td><td>0</td><td>-.5</td><td>0</td><td>2.1</td><td>0</td><td>1.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-01-31</td><td>2.7</td><td>0</td><td>-2.2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-02-01</td><td>.7</td><td>0</td><td>-2.8</td><td>0</td><td>-1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-02-02</td><td>-.6</td><td>0</td><td>-2.9</td><td>0</td><td>-2.1</td><td>0</td><td>4.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-02-03</td><td>.4</td><td>0</td><td>-3.1</td><td>0</td><td>-1.1</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-02-04</td><td>.9</td><td>0</td><td>-.6</td><td>0</td><td>-.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-02-05</td><td>1.5</td><td>0</td><td>-2.2</td><td>0</td><td>-.5</td><td>0</td><td>.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-02-06</td><td>1.3</td><td>0</td><td>-7.3</td><td>0</td><td>-1.2</td><td>0</td><td>.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-02-07</td><td>2.7</td><td>0</td><td>.5</td><td>0</td><td>1.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-02-08</td><td>1.1</td><td>0</td><td>-4.6</td><td>0</td><td>-2.3</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-02-09</td><td>-1</td><td>0</td><td>-7.6</td><td>0</td><td>-5.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-02-10</td><td>-5.3</td><td>0</td><td>-9.2</td><td>0</td><td>-7.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-02-11</td><td>-5.3</td><td>0</td><td>-12.3</td><td>0</td><td>-8.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-02-12</td><td>2</td><td>0</td><td>-7.6</td><td>0</td><td>-1.3</td><td>0</td><td>1.6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-02-13</td><td>.8</td><td>0</td><td>-1.3</td><td>0</td><td>-.1</td><td>0</td><td>4.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-02-14</td><td>1.4</td><td>0</td><td>-.6</td><td>0</td><td>.3</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-02-15</td><td>.7</td><td>0</td><td>-8.6</td><td>0</td><td>-3</td><td>0</td><td>3.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-02-16</td><td>-4.8</td><td>0</td><td>-15.1</td><td>0</td><td>-9.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-02-17</td><td>-2</td><td>0</td><td>-7.6</td><td>0</td><td>-4.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-02-18</td><td>-2.2</td><td>0</td><td>-7.5</td><td>0</td><td>-4.6</td><td>0</td><td>1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-02-19</td><td>-.7</td><td>0</td><td>-16.3</td><td>0</td><td>-10.5</td><td>0</td><td>.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-02-20</td><td>-6.7</td><td>0</td><td>-19.6</td><td>0</td><td>-13.5</td><td>0</td><td>.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-02-21</td><td>-4</td><td>0</td><td>-9.3</td><td>0</td><td>-7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-02-22</td><td>-3.2</td><td>0</td><td>-12.4</td><td>0</td><td>-7.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-02-23</td><td>-2.9</td><td>0</td><td>-11.1</td><td>0</td><td>-6.2</td><td>0</td><td>.8</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-02-24</td><td>-9.6</td><td>0</td><td>-17.6</td><td>0</td><td>-13.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-02-25</td><td>-9.3</td><td>0</td><td>-21.9</td><td>0</td><td>-15.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-02-26</td><td>-3.1</td><td>0</td><td>-20.4</td><td>0</td><td>-12.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-02-27</td><td>-1.9</td><td>0</td><td>-8.8</td><td>0</td><td>-4.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-02-28</td><td>.6</td><td>0</td><td>-4.9</td><td>0</td><td>-2.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-01</td><td>-2.1</td><td>0</td><td>-5.5</td><td>0</td><td>-4.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-02</td><td>-3.6</td><td>0</td><td>-6.1</td><td>0</td><td>-4.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-03</td><td>-.6</td><td>0</td><td>-5.8</td><td>0</td><td>-3.3</td><td>0</td><td>.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-04</td><td>1.7</td><td>0</td><td>-1.9</td><td>0</td><td>-.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-05</td><td>1.8</td><td>0</td><td>-1.5</td><td>0</td><td>.5</td><td>0</td><td>.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-06</td><td>2.8</td><td>0</td><td>.4</td><td>0</td><td>1.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-07</td><td>2.7</td><td>0</td><td>-1.8</td><td>0</td><td>.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-08</td><td>-.3</td><td>0</td><td>-3.3</td><td>0</td><td>-1.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-09</td><td>.5</td><td>0</td><td>-4.2</td><td>0</td><td>-1.7</td><td>0</td><td>.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-10</td><td>2.2</td><td>0</td><td>-.8</td><td>0</td><td>.8</td><td>0</td><td>1.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-11</td><td>2.2</td><td>0</td><td>.1</td><td>0</td><td>.7</td><td>0</td><td>4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-12</td><td>.1</td><td>0</td><td>-6.6</td><td>0</td><td>-4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-13</td><td>-3.4</td><td>0</td><td>-8.8</td><td>0</td><td>-5.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-14</td><td>0</td><td>0</td><td>-6.8</td><td>0</td><td>-3.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-15</td><td>3</td><td>0</td><td>-6.1</td><td>0</td><td>-.5</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-16</td><td>4.1</td><td>0</td><td>-.1</td><td>0</td><td>1.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-17</td><td>9.4</td><td>0</td><td>2.1</td><td>0</td><td>5.4</td><td>0</td><td>.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-18</td><td>7.6</td><td>0</td><td>-3.5</td><td>0</td><td>.5</td><td>0</td><td>1.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-19</td><td>1.3</td><td>0</td><td>-4.6</td><td>0</td><td>-1.8</td><td>0</td><td>.7</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-20</td><td>10.3</td><td>0</td><td>1.2</td><td>0</td><td>5.3</td><td>0</td><td>1.2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-21</td><td>9</td><td>0</td><td>4.3</td><td>0</td><td>5.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-22</td><td>11.6</td><td>0</td><td>.6</td><td>0</td><td>4.4</td><td>0</td><td>.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-23</td><td>11.2</td><td>0</td><td>3.4</td><td>0</td><td>5.8</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-24</td><td>6.5</td><td>0</td><td>-.6</td><td>0</td><td>2.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-25</td><td>8.9</td><td>0</td><td>-1.7</td><td>0</td><td>3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-26</td><td>12.4</td><td>0</td><td>-.8</td><td>0</td><td>5.4</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-27</td><td>10.3</td><td>0</td><td>1.3</td><td>0</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-28</td><td>7.6</td><td>0</td><td>1.6</td><td>0</td><td>3.5</td><td>0</td><td>5.6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-29</td><td>2</td><td>0</td><td>-.3</td><td>0</td><td>.7</td><td>0</td><td>4.6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-30</td><td>.8</td><td>0</td><td>-2.1</td><td>0</td><td>-.8</td><td>0</td><td>1.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-03-31</td><td>1.6</td><td>0</td><td>-3.4</td><td>0</td><td>-.4</td><td>0</td><td>1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-04-01</td><td>4.1</td><td>0</td><td>-1.6</td><td>0</td><td>1.2</td><td>0</td><td>1.8</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-04-02</td><td>2.7</td><td>0</td><td>-1.8</td><td>0</td><td>.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-04-03</td><td>7.1</td><td>0</td><td>-1.9</td><td>0</td><td>2.4</td><td>0</td><td>1.9</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-04-04</td><td>13.4</td><td>0</td><td>4.7</td><td>0</td><td>8</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-04-05</td><td>7.1</td><td>0</td><td>-.1</td><td>0</td><td>1.8</td><td>0</td><td>.1</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-04-06</td><td>7.5</td><td>0</td><td>-2.2</td><td>0</td><td>2.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-04-07</td><td>11.6</td><td>0</td><td>.9</td><td>0</td><td>6.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-04-08</td><td>9.5</td><td>0</td><td>5</td><td>0</td><td>6.1</td><td>0</td><td>2</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-04-09</td><td>10</td><td>0</td><td>2.5</td><td>0</td><td>5.6</td><td>0</td><td>2.3</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-04-10</td><td>9.3</td><td>0</td><td>2.9</td><td>0</td><td>3.8</td><td>0</td><td>3.5</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-04-11</td><td>3.1</td><td>0</td><td>-2.6</td><td>0</td><td>.9</td><td>0</td><td>5.8</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-04-12</td><td>2.3</td><td>0</td><td>-3.1</td><td>0</td><td>-.5</td><td>0</td><td>1.6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-04-13</td><td>4.5</td><td>0</td><td>-4.6</td><td>0</td><td>.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-04-14</td><td>5.3</td><td>0</td><td>.5</td><td>0</td><td>2.9</td><td>0</td><td>2.4</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-04-15</td><td>10.6</td><td>0</td><td>2.7</td><td>0</td><td>5.9</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-04-16</td><td>12.1</td><td>0</td><td>4.7</td><td>0</td><td>8.1</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-04-17</td><td>12.9</td><td>0</td><td>1</td><td>0</td><td>7.5</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-04-18</td><td>12.5</td><td>0</td><td>5</td><td>0</td><td>7.2</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-04-19</td><td>17.7</td><td>0</td><td>2.3</td><td>0</td><td>10.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-04-20</td><td>20.3</td><td>0</td><td>6.1</td><td>0</td><td>13.3</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-04-21</td><td>20.6</td><td>0</td><td>6.2</td><td>0</td><td>13.6</td><td>0</td><td>0</td><td>0</td><td>2</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-04-22</td><td>19.3</td><td>0</td><td>11.1</td><td>0</td><td>14.1</td><td>0</td><td>.6</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-04-23</td><td>14.1</td><td>0</td><td>9.7</td><td>0</td><td>11.3</td><td>0</td><td>20</td><td>0</td><td>0</td>
+				</tr>
+				<tr>
+					<td>34300</td><td>�������               </td><td>1938-04-24</td><td>12.1</td><td>0</td><td>7.1</td><td>0</td><td>8.9</td><td>0</td><td>1.2</td><td>0</td><td>0</td>
+				</tr>
+				</tbody></table></b></font></center>
+
+
+				</body></html>
